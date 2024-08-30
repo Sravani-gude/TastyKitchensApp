@@ -1,0 +1,81 @@
+.navigation {
+  height: 80px;
+  top: 2px;
+  background: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+}
+.tasty-kitchens-logo {
+  width: 49px;
+  height: 39px;
+  top: 2px;
+  left: 2px;
+}
+.logo-card {
+  margin-left: 153px;
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  display: flex;
+}
+.logo-heading {
+  color: #f7931e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  padding-left: 5px;
+}
+.navigation-unordered-list {
+  list-style: none;
+  display: flex;
+  margin-right: 153px;
+  align-items: center;
+}
+.list-item {
+  padding-left: 20px;
+}
+.active-nav-item {
+  color: #f7931e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.356px;
+}
+.nav-item {
+  color: var(--light-blue-gray-700, #334155);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.356px;
+}
+.logout-btn {
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #f7931e;
+  color: var(--light-base-white, #fff);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+}
+.nav-bar-mobile-view {
+  display: none;
+}
