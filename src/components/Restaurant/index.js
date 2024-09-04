@@ -42,24 +42,42 @@ class Restaurant extends Component {
   componentDidMount() {
     this.getRestuarents()
   }
-
   onDecreasePageno = () => {
     const {count, limit} = this.state
     if (count > 1) {
-      this.setState(
-        {count: count - 1, offset: (count - 1) * limit},
-        this.getRestuarents,
-      )
+      this.setState(prevState => {
+        const newCount = prevState.count - 1
+        return {count: newCount, offset: (newCount - 1) * limit}
+      }, this.getRestuarents)
     }
   }
 
+  // onDecreasePageno = () => {
+  //   const {count, limit} = this.state
+  //   if (count > 1) {
+  //     this.setState(
+  //       {count: count - 1, offset: (count - 1) * limit},
+  //       this.getRestuarents,
+  //     )
+  //   }
+  // }
+
+  // onIncreasePageno = () => {
+  //   const {count, limit} = this.state
+  //   if (count < 20) {
+  //     this.setState(
+  //       {count: count + 1, offset: (count - 1) * limit},
+  //       this.getRestuarents,
+  //     )
+  //   }
+  // }
   onIncreasePageno = () => {
     const {count, limit} = this.state
     if (count < 20) {
-      this.setState(
-        {count: count + 1, offset: (count - 1) * limit},
-        this.getRestuarents,
-      )
+      this.setState(prevState => {
+        const newCount = prevState.count + 1
+        return {count: newCount, offset: (newCount - 1) * limit}
+      }, this.getRestuarents)
     }
   }
 

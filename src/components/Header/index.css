@@ -4,6 +4,103 @@
   background: #f8fafc;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.tasty-kitchens-logo {
+  width: 49px;
+  height: 39px;
+}
+
+.logo-card {
+  display: flex;
+  align-items: center;
+}
+
+.logo-heading {
+  color: #f7931e;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.navigation-unordered-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  padding-left: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--light-blue-gray-700, #334155);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.active-nav-item {
+  color: #f7931e;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #f7931e;
+  color: var(--light-base-white, #fff);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo-card {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navigation-unordered-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .list-item {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logout-btn {
+    align-self: center;
+  }
+}
+
+/* .navigation {
+  height: 80px;
+  top: 2px;
+  background: #f8fafc;
+  display: flex;
+  justify-content: space-between;
 }
 .tasty-kitchens-logo {
   width: 49px;
@@ -22,7 +119,9 @@
 }
 .logo-heading {
   color: #f7931e;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings:
+    'clig' off,
+    'liga' off;
   font-family: DM Sans;
   font-size: 24px;
   font-style: italic;
@@ -41,7 +140,9 @@
 }
 .active-nav-item {
   color: #f7931e;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings:
+    'clig' off,
+    'liga' off;
   font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
@@ -51,7 +152,9 @@
 }
 .nav-item {
   color: var(--light-blue-gray-700, #334155);
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings:
+    'clig' off,
+    'liga' off;
   font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
@@ -78,4 +181,6 @@
 }
 .nav-bar-mobile-view {
   display: none;
-}
+} */
+
+/* Common Header Styles */
