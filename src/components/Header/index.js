@@ -20,7 +20,7 @@ const Header = props => (
       const renderCartItemsCount = () => (
         <>
           {cartItemsCount > 0 ? (
-            <span data-testid='active-count' className='cart-count-badge'>
+            <span data-testid="active-count" className="cart-count-badge">
               {cartList.length}
             </span>
           ) : null}
@@ -29,35 +29,35 @@ const Header = props => (
       const className = isShow ? 'ShowItems' : 'collapseItem'
 
       return (
-        <nav className='navigation'>
-          <div className='logo-card'>
-            <Link to='/' className='nav-link'>
+        <nav className="navigation">
+          <div className="logo-card">
+            <Link to="/" className="nav-link">
               <img
-                src='https://res.cloudinary.com/dm6yvpose/image/upload/f_auto,q_auto/v1/Tasty%20KitchensApp/r5af4v3v1mxqpzdgupqy'
-                alt='website logo'
-                className='tasty-kitchens-logo'
+                src="https://res.cloudinary.com/dm6yvpose/image/upload/f_auto,q_auto/v1/Tasty%20KitchensApp/r5af4v3v1mxqpzdgupqy"
+                alt="website logo"
+                className="tasty-kitchens-logo"
               />
-              <p className='logo-heading'>Tasty Kitchens</p>
+              <p className="logo-heading">Tasty Kitchens</p>
             </Link>
           </div>
-          <ul className='navigation-unordered-list'>
-            <li className='list-item'>
-              <Link to='/' className='nav-link'>
-                <p className='nav-item'>Home</p>
+          <ul className="navigation-unordered-list">
+            <li className="list-item">
+              <Link to="/" className="nav-link">
+                <p className="nav-item">Home</p>
               </Link>
             </li>
-            <li className='list-item'>
-              <Link to='/cart' className='nav-link'>
-                <div className='nav-link-item'>
-                  <p className='nav-item'>Cart</p>
+            <li className="list-item">
+              <Link to="/cart" className="nav-link">
+                <div className="nav-link-item">
+                  <p className="nav-item">Cart</p>
                   {renderCartItemsCount()}
                 </div>
               </Link>
             </li>
-            <li className='list-item'>
+            <li className="list-item">
               <button
-                type='button'
-                className='logout-btn'
+                type="button"
+                className="logout-btn"
                 onClick={onClickLogout}
               >
                 Logout
@@ -65,24 +65,24 @@ const Header = props => (
             </li>
           </ul>
           <button
-            type='button'
-            className='nav-collapse-button'
+            type="button"
+            className="nav-collapse-button"
             onClick={isShowMenu}
           >
             <ImMenu />
           </button>
           <div className={`nav-bar-collapse ${className}`}>
             <ul>
-              <Link to='/' className='nav-link'>
+              <Link to="/" className="nav-link">
                 <li>Home</li>
               </Link>
-              <Link to='/cart' className='nav-link'>
+              <Link to="/cart" className="nav-link">
                 <li>Cart</li>
               </Link>
             </ul>
             <button
-              type='button'
-              className='logout-button'
+              type="button"
+              className="logout-button"
               onClick={onClickLogout}
             >
               Logout

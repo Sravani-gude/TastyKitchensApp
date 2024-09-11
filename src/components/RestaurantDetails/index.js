@@ -99,10 +99,10 @@ export default class RestaurantDetails extends Component {
 
   renderLoadingView = () => (
     <div
-      className='products-details-loader-container'
-      data-testid='restaurant-details-loader'
+      className="products-details-loader-container"
+      data-testid="restaurant-details-loader"
     >
-      <Loader type='TailSpin' color='#0b69ff' height='50' width='50' />
+      <Loader type="TailSpin" color="#0b69ff" height="50" width="50" />
     </div>
   )
 
@@ -132,27 +132,27 @@ export default class RestaurantDetails extends Component {
         }
         return (
           <div>
-            <div className='restaurent-back-image'>
+            <div className="restaurent-back-image">
               <img
                 src={imageUrl}
-                alt='restaurant'
-                className='restaurant-image-size'
+                alt="restaurant"
+                className="restaurant-image-size"
               />
-              <div className='restaurant-details-view'>
+              <div className="restaurant-details-view">
                 <h1>{name}</h1>
                 <p>{cuisine}</p>
                 <p>{location}</p>
-                <div className='rating-cost-container'>
+                <div className="rating-cost-container">
                   <div>
-                    <div className='icon-flex-row'>
+                    <div className="icon-flex-row">
                       <BsFillStarFill />
                       <p>{rating}</p>
                     </div>
                     <p>{reviewsCount} + Ratings</p>
                   </div>
-                  <div className='vl'> </div>
+                  <div className="vl"> </div>
                   <div>
-                    <div className='icon-flex-row'>
+                    <div className="icon-flex-row">
                       <BiRupee />
                       <p>{costOfTwo}</p>
                     </div>
@@ -161,7 +161,7 @@ export default class RestaurantDetails extends Component {
                 </div>
               </div>
             </div>
-            <ul className='food-list-container-element'>
+            <ul className="food-list-container-element">
               {FoodDetails.map(eachItem => (
                 <FoodItem
                   FoodDetails={eachItem}
@@ -181,7 +181,7 @@ export default class RestaurantDetails extends Component {
     </ShowContext.Consumer>
   )
 
-  renderFailureView = () => <Redirect to='/' />
+  renderFailureView = () => <Redirect to="/" />
 
   renderProductDetails = () => {
     const {apiStatus} = this.state
