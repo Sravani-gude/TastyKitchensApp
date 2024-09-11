@@ -138,24 +138,24 @@ class Restaurant extends Component {
           changeSortby={this.changeSortBy}
         />
         <hr />
-        <ul className='restaurants-list'>
+        <ul className="restaurants-list">
           {restaurantList.map(eachItem => (
             <RestaurantItem list={eachItem} key={eachItem.id} />
           ))}
         </ul>
-        <div className='page-indicator'>
+        <div className="page-indicator">
           <button
-            type='button'
+            type="button"
             onClick={this.onDecreasePageno}
-            data-testid='pagination-left-button'
+            data-testid="pagination-left-button"
           >
             <BiChevronLeftSquare size={20} />
           </button>
-          <p data-testid='active-page-number'>{count} </p>
+          <p data-testid="active-page-number">{count} </p>
           <button
-            type='button'
+            type="button"
             onClick={this.onIncreasePageno}
-            data-testid='pagination-right-button'
+            data-testid="pagination-right-button"
           >
             <BiChevronRightSquare size={20} />
           </button>
@@ -166,10 +166,10 @@ class Restaurant extends Component {
 
   renderLoadingView = () => (
     <div
-      data-testid='restaurants-list-loader'
-      className='products-loader-container'
+      data-testid="restaurants-list-loader"
+      className="products-loader-container"
     >
-      <Loader type='TailSpin' color='#0b69ff' height='50' width='50' />
+      <Loader type="TailSpin" color="#0b69ff" height="50" width="50" />
     </div>
   )
 
@@ -188,7 +188,7 @@ class Restaurant extends Component {
   }
 
   render() {
-    return <div className='home-background'>{this.renderAllRestaurants()}</div>
+    return <div className="home-background">{this.renderAllRestaurants()}</div>
   }
 }
 export default Restaurant
