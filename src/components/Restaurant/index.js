@@ -151,7 +151,7 @@ class Restaurant extends Component {
           >
             <BiChevronLeftSquare size={20} />
           </button>
-          <p data-testid="active-page-number">{count} </p>
+          <p data-testid="active-page-number">{count}</p>
           <button
             type="button"
             onClick={this.onIncreasePageno}
